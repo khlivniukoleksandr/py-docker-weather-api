@@ -7,7 +7,7 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
 CITY = "Paris"
-BASE_URL = f"http://api.weatherapi.com/v1/current.json"
+BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 
 def get_weather() -> None:
@@ -26,7 +26,6 @@ def get_weather() -> None:
         print(f"Weather in {location}: {temperature}°C, {condition}")
     else:
         print("An error occurred, unable to retrieve data")
-
 
 
 if __name__ == "__main__":
